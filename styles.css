@@ -4,7 +4,7 @@
     height: 150px;
     background-color:springgreen;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .title {
@@ -14,66 +14,100 @@
     color: darkorange;
 }
 
-.container {
+.outerContainer {
     width: 100%;
     height: 1200px;
-    background-color: white;
-    margin-top: 50px;
     display: flex;
+    justify-content: center;
+    background-color:black;
+    padding-top: 50px;
 }
 
-.outerShell {
-    width: 50%;
-    height: 50%;
-    background-color: black;
+.container {
+    width: 430px;
+    height: 610px;
+    background-color: silver;
+    margin-top: 5px;
     display: flex;
-    margin-left: 25%;
+    justify-content: center;
     border-radius: 7px;
 }
 
+.outerShell {
+    margin-top: 5px;
+    max-height: 600px;
+    max-width: 420px;
+    width: 420px; 
+    height: 600px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 25%; */
+    border-radius: 3px;
+}
+
 .innerShell {
+    max-width: 420x;
+    max-height: 600px;
     width: 100%;
-    border-style: dotted;
+    /* border-style: dotted; */
     /* border-color: white; */
     /* margin: 25px; */
     display: flex;
     flex-direction: column;
     /* gap: 10px; */
+    border-radius: 7px;
+}
+.screenShell {
+    width: 88%;
+    height: 140px;
+    border-style: solid;
+    border-color: silver;
+    background-color:steelblue;
+    margin: 25px;
+}
+.screen {
+    font-family: monospace;
+    font-size: 25px;
+    color:darkorange;
+    /* text-align: right; */
+    text-align: end;
+    padding-top: 100px;
+    padding-right: 5px;
 }
 .column {
+    max-width: 420px;
     flex: 1;
-    background-color:slategrey;
-    /* margin: 2px; */
+    background-color:black;
     display: flex;
-    /* padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px; */
+    /* background-color: white; */
+    border-radius: 7px;
 }
 .buttonRow {
-    width: 95%;
-    height: 95%;
+    flex: 1;
+    max-width: 420px;
+    width: fit-content;
+    height: 100px;
     background-color: black;
     margin: 2px;
     color: white;
     font-family: monospace;
-    font-size: 30px
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.screenShell {
-    width: 88%;
-    height: 75%;
-    flex: 1;
-    border-style: solid;
-    border-color: white;
-    background-color:slategrey;
-    /* margin: 2px;  */
-    /* display: flex; */
-    margin: 25px;
+.button {
+    background-color:silver;
+    width: 90px;
+    height: 90px;
+    font-family: monospace;
+    font-size: 35px;
+    margin: 5px;
 }
-.screen {
-    color: black;
-    /* text-align: right; */
-    text-align: end;
-    padding-top: 82px;
-    padding-right: 5px;
+
+.button:hover {
+    background-color: steelblue;
+    color: orange;
 }
